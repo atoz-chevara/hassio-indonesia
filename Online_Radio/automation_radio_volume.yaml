@@ -1,0 +1,15 @@
+alias: Radio Volume
+description: ''
+trigger:
+  - platform: state
+    entity_id: input_number.volume_radio
+condition: []
+action:
+  - service: media_player.volume_set
+    data:
+      entity_id: >-
+        {% if is_state("input_select.speaker", "Google Nest Mini") %}
+        media_player.google_home {% elif is_state("input_select.speaker",
+        "Android TV") %} media_player.android_tv {% endif %}
+      volume_level: '{{  states("input_number.volume_radio")|int/30  }}'
+mode: single
