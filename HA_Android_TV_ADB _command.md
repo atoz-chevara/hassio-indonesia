@@ -149,6 +149,17 @@ data:
 
 ## VIU
 
+### Menjalankan VIU
+
+```
+service: androidtv.adb_command
+data:
+  entity_id: media_player.android_tv_2
+  command: >-
+    am start -a android.intent.action.VIEW -n
+    com.vuclip.viu.tv/com.vuclip.viu.view.splash.TvSplashActivity
+```
+
 ### Menghentikan VIU
 
 ```
@@ -161,6 +172,17 @@ data:
 ```
 
 ## IQIYI
+
+### Menjalankan IQIYI
+
+```
+service: androidtv.adb_command
+data:
+  entity_id: media_player.android_tv_2
+  command: >-
+    am start -a android.intent.action.VIEW -n
+    com.iqiyi.i18n.tv/.launch.LaunchActivity
+```
 
 ### Menghentikan IQIYI
 
@@ -175,6 +197,17 @@ data:
 
 ## Disney+ Hotstar
 
+### Menjalankan Disney+ Hotstar
+
+```
+service: androidtv.adb_command
+data:
+  entity_id: media_player.android_tv_2
+  command: >-
+    am start -a android.intent.action.VIEW -n
+    in.startv.hotstar.dplus.tv/in.startv.hotstar.ui.splash.TVSplashActivity
+```
+
 ### Menghentikan Disney+ Hotstar
 
 ```
@@ -187,6 +220,17 @@ data:
 ```
 
 ## Vidio
+
+### Menjalankan Vidio
+
+```
+service: androidtv.adb_command
+data:
+  entity_id: media_player.android_tv_2
+  command: >-
+    am start -a android.intent.action.VIEW -n
+    com.vidio.android.tv/.splashscreen.SplashScreenActivity
+```
 
 ### Menghentikan Vidio
 
@@ -201,6 +245,17 @@ data:
 
 ## UseeTV
 
+### Menjalankan UseeTV
+
+```
+service: androidtv.adb_command
+data:
+  entity_id: media_player.android_tv_2
+  command: >-
+    am start -a android.intent.action.VIEW -n
+    com.useetv.stb/.presentation.splashscreen.SplashScreenActivity
+```
+
 ### Menghentikan UseeTV
 
 ```
@@ -213,6 +268,17 @@ data:
 ```
 
 ## IPTV Pro
+
+### Menjalankan IPTV Pro
+
+```
+service: androidtv.adb_command
+data:
+  entity_id: media_player.android_tv_2
+  command: >-
+    am start -a android.intent.action.VIEW -n
+    ru.iptvremote.android.iptv.pro/.ChannelsActivity
+```
 
 ### Menghentikan IPTV Pro
 
@@ -227,6 +293,17 @@ data:
 
 ## TinyCam FREE
 
+### Menjalankan TinyCam FREE
+
+```
+service: androidtv.adb_command
+data:
+  entity_id: media_player.android_tv_2
+  command: >-
+    am start -a android.intent.action.VIEW -n
+    com.alexvas.dvr/.MainActivity
+```
+
 ### Menghentikan TinyCam FREE
 
 ```
@@ -236,6 +313,30 @@ data:
   command: >-
     am force-stop
     com.alexvas.dvr
+```
+
+## DutaFilm
+
+### Menjalankan DutaFilm
+
+```
+service: androidtv.adb_command
+data:
+  entity_id: media_player.android_tv_2
+  command: >-
+    am start -a android.intent.action.VIEW -d -n
+    com.dutafilm.online/.MainActivity
+```
+
+### Menghentikan DutaFilm
+
+```
+service: androidtv.adb_command
+data:
+  entity_id: media_player.android_tv_2
+  command: >-
+    am force-stop
+    com.dutafilm.online
 ```
 
 # Melalui Service Media Player
