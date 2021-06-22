@@ -3,11 +3,20 @@
 Berikut daftar perangkat **Smart Home** yang di jual di Market Place Indonesia yang sudah dapat di integrasikan ke Home Assistant.
 
 
-| Manufacturer | Device | Model | Website | Integrasi | Gambar | Keterangan |
-| ------------ |:-----: | :---: | :-----: | :-------: | :----: | :----: |
-| Bardi      | Smart LED Bulb 9W RGBWW | - | https://bardi.co.id/products/smart-bulb-9w-rgbww/ | Tuya, Local Tuya | <img src="https://bardi.co.id/wp-content/uploads/2019/03/Smart-Light-Bulb-9W-RGBWW.jpg" width="128"> | - |
-|            | Smart LED Bulb 12W RGBWW | - | https://bardi.co.id/products/smart-bulb-12w-rgbww/ | Tuya, Local Tuya | <img src="https://bardi.co.id/wp-content/uploads/2019/11/Smart-Light-Bulb-12W-RGBWW.jpg" width="128"> | - |
-|            | Smart LED Bulb 9W WW – Dim CCT | - | https://bardi.co.id/products/smart-bulb-9w-dim-cct/ | Tuya, Local Tuya | <img src="https://bardi.co.id/wp-content/uploads/2020/01/Smart-Light-Bulb-9W-Dim-CCT.jpg" width="128"> | - |
-|            | IP Camera Static Outdoor | - | https://bardi.co.id/products/ipcam-outdoor-stc/ | ONVIF, FFMPEG, RTSP | <img src="https://bardi.co.id/wp-content/uploads/2021/04/Outdoor-STC-IP-cam-5-with-logo-e1619256718428.png" width="128"> | - |
-|            | Smart Portable Plug | - | https://bardi.co.id/products/portable-plug-16a-wem/ | Tuya | <img src="https://bardi.co.id/wp-content/uploads/2019/09/Smart-Plug-Wifi.jpg" width="128"> | - |
-
+| Manufacturer | Brand | Model | Device | Website | Integrasi | Gambar | Status | Keterangan |
+| ------------ | :---: | :---: | :---: | :-----: | :-------: | :----: | :----: | :--------: |
+| BARDI        | - | - | Smart LED Bulb 9W RGBWW | https://bardi.co.id/products/smart-bulb-9w-rgbww/ | Tuya, Local Tuya | <img src="https://bardi.co.id/wp-content/uploads/2019/03/Smart-Light-Bulb-9W-RGBWW.jpg" width="128"> | - | - |
+|              | - | - | Smart LED Bulb 12W RGBWW | https://bardi.co.id/products/smart-bulb-12w-rgbww/ | Tuya, Local Tuya | <img src="https://bardi.co.id/wp-content/uploads/2019/11/Smart-Light-Bulb-12W-RGBWW.jpg" width="128"> | - | - |
+|              | - | - | Smart LED Bulb 9W WW – Dim CCT | https://bardi.co.id/products/smart-bulb-9w-dim-cct/ | Tuya, Local Tuya | <img src="https://bardi.co.id/wp-content/uploads/2020/01/Smart-Light-Bulb-9W-Dim-CCT.jpg" width="128"> | - | - |
+|              | - | - | IP Camera Static Outdoor | https://bardi.co.id/products/ipcam-outdoor-stc/ | ONVIF, FFMPEG, RTSP | <img src="https://bardi.co.id/wp-content/uploads/2021/04/Outdoor-STC-IP-cam-5-with-logo-e1619256718428.png" width="128"> | - | - |
+|              | - | - | Smart Portable Plug | https://bardi.co.id/products/portable-plug-16a-wem/ | Tuya | <img src="https://bardi.co.id/wp-content/uploads/2019/09/Smart-Plug-Wifi.jpg" width="128"> | - | - |
+|              | - | - | Smart Extension Power Strip – 10A | https://bardi.co.id/products/extention-power-strip-ps-10a-nem/ | Tuya | <img src="https://bardi.co.id/wp-content/uploads/2019/11/Extension-Power-Strip-rotated.jpg" width="128"> | - | - |
+|              | - | - | Smart Aroma Diffuser | https://bardi.co.id/products/aroma-diffuser/ | Tuya | <img src="https://bardi.co.id/wp-content/uploads/2021/04/Smart-Aroma-Diffuser.png" width="128"> | `Switch` | - |
+|              | - | - | Smart WiFi Touch Wallswitch - EU 1 Gang | https://bardi.co.id/products/light-wallswitch-1-gang-1-eu-wht-blk/ | Tuya | <img src="https://bardi.co.id/wp-content/uploads/2019/03/LIGHT-WALLSWITCH-1-GANG.jpg" width="128"> | `Switch` | - |
+|              | - | - | Smart WiFi Touch Wallswitch - EU 2 Gang | https://bardi.co.id/products/light-wallswitch-eu-2-gang-wht-blk/ | Tuya | <img src="https://bardi.co.id/wp-content/uploads/2019/03/LIGHT-WALLSWITCH-2-GANG.jpg" width="128"> | `Switch` | - |
+| XIAOMI       | Mijia | ZNDMWG03LM | Xiaomi Mijia Zigbee Smart Home Multi-Mode Gateway | - | [HACS - Xiaomi Gateway 3 for Home Assistant](https://github.com/AlexxIT/XiaomiGateway3) | <img src="https://www.jakartanotebook.com/images/products/103/252/45899/3/xiaomi-mijia-zigbee-smart-home-multi-mode-gateway-3-zndmwg03lm-white-3.jpg" width="128"> | - | - |
+|              |       | GZCGQ01LM | Xiaomi Mijia Zigbee Smart Light Sensor Multi-Mode Gateway | - | [HACS - Xiaomi Gateway 3 for Home Assistant](https://github.com/AlexxIT/XiaomiGateway3) | <img src="https://www.jakartanotebook.com/images/products/103/252/46061/3/xiaomi-mijia-zigbee-30-smart-light-sensor-multi-mode-gateway-gzcgq01lm-white-2.jpg" width="128"> | - | - |
+|              |       | - | Xiaomi Mijia Zigbee Smart Human Body Sensor | - | [HACS - Xiaomi Gateway 3 for Home Assistant](https://github.com/AlexxIT/XiaomiGateway3) | <img src="https://www.jakartanotebook.com/images/products/103/252/45899/3/xiaomi-mijia-zigbee-smart-home-multi-mode-gateway-3-zndmwg03lm-white-3.jpg" width="128"> | - | - |
+|              |       | - | Xiaomi Mijia Zigbee Smart Temperature and Humidity Sensor | - | [HACS - Xiaomi Gateway 3 for Home Assistant](https://github.com/AlexxIT/XiaomiGateway3) | <img src="https://ae01.alicdn.com/kf/HTB190lUaLLsK1Rjy0Fbq6xSEXXa0/Xiaomi-Mi.jpg_480x480.jpg_Q80.jpg" width="128"> | - | - |
+|              | Aqara | - | Xiaomi Aqara Water Immersing Sensor Flood Water Leak Detector | - | [Xiaomi Gateway (Aqara)](https://www.home-assistant.io/integrations/xiaomi_aqara/) | <img src="https://img.dxcdn.com/productimages/sku_481477_1.jpg" width="128"> | - | - |
+| TENDA        | - | - | Tenda AC6 Dual Band AC1200 Mbps GIGABIT Wifi Router | https://www.tendacn.com/en/product/ac6.html | [UPnP/IGD](https://www.home-assistant.io/integrations/upnp/) | <img src="https://www.tendacn.com/en/userfiles/image/product/2016113/b_201611031613284586.jpg" width="128"> | - | - |
