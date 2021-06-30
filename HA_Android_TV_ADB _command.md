@@ -125,7 +125,7 @@ data:
 
 ### Memutar Movie/Serial di Netflix
 
-Contoh Serial **UNBREAKABLE KIMMY SCHMIDT**
+Contoh Serial **HOSPITAL PLAYLIST** yang memiliki URL https://www.netflix.com/watch/81413568 dapat di putar ke *Android TV* melalui perintah berikut:
 
 ```
 service: androidtv.adb_command
@@ -133,7 +133,7 @@ data:
   entity_id: media_player.android_tv_2
   command: >-
     am start -n com.netflix.ninja/.MainActivity -a android.intent.action.VIEW -d
-    netflix://title/80025384 -f 0x10000020 -e "amzn_deeplink_data" "80025384"
+    netflix://title/81413568 -f 0x10000020 -e "amzn_deeplink_data" "81413568"
 ```
 
 ### Menghentikan Netflix
