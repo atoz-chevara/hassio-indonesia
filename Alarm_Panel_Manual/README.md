@@ -1,6 +1,6 @@
 # Membuat Panel Alarm secara Manual
 
-![alt text](img/01.png)
+![alt text](img/02.png)
 
 [toc]
 
@@ -99,6 +99,82 @@ alias: 'Alarm: Arm Night'
 icon: mdi:star
 ```
 
+Membuat *scene* untuk menyalakan lampu:
+
+```yaml
+- id: '1624041309545'
+  name: 'Alarm: Turn lights on'
+  entities:
+    light.lampu_kamar_pv:
+      min_mireds: 154
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 255
+      color_temp: 154
+      friendly_name: Lampu Kamar PV
+      supported_features: 23
+      state: 'on'
+    light.301006345002910a158b:
+      min_mireds: 153
+      max_mireds: 370
+      supported_color_modes:
+      - color_temp
+      color_mode: color_temp
+      brightness: 255
+      color_temp: 56
+      friendly_name: Lampu Kamar
+      supported_features: 3
+      state: 'on'
+  icon: mdi:alarm-light-outline
+```
+
+Membuat *scene* untuk mematikan lampu:
+
+```yaml
+- id: '1624041328549'
+  name: 'Alarm: Turn lights off'
+  entities:
+    light.lampu_kamar_pv:
+      min_mireds: 154
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: Lampu Kamar PV
+      supported_features: 23
+      state: 'off'
+    light.301006345002910a158b:
+      min_mireds: 153
+      max_mireds: 370
+      supported_color_modes:
+      - color_temp
+      friendly_name: Lampu Kamar
+      supported_features: 3
+      state: 'off'
+  icon: mdi:alarm-light-off-outline
+```
+
 Lanjutkan dengan membuat *skrip* untuk mengedipkan lampu:
 
 ```yaml
@@ -109,7 +185,7 @@ sequence:
     state: armed_away,armed_home,armed_night
   - service: scene.turn_on
     target:
-      entity_id: scene.alarm_turn_red
+      entity_id: scene.alarm_turn_red   # Sesuaikan dengan Entity ID yang Anda miliki
   - delay:
       hours: 0
       minutes: 0
@@ -117,14 +193,15 @@ sequence:
       milliseconds: 0
   - service: scene.turn_on
     target:
-      entity_id: scene.alarm_turn_lights_off
+      entity_id: scene.alarm_turn_lights_off    # Sesuaikan dengan Entity ID yang Anda miliki
   - service: script.turn_on
     target:
       entity_id:
-        - script.alarm_flash_loop_on
+        - script.alarm_flash_loop_on    # Sesuaikan dengan Entity ID yang Anda miliki
 mode: single
 icon: mdi:alarm-light-outline
 ```
+
 Kemudian membuat *skrip* pengulangan:
 
 ```yaml
@@ -138,7 +215,7 @@ sequence:
   - service: script.turn_on
     target:
       entity_id:
-        - script.1624058695419
+        - script.1624058695419    # Sesuaikan dengan Entity ID yang Anda miliki
 mode: single
 icon: mdi:alarm-light
 ```
