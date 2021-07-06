@@ -1,0 +1,17 @@
+alias: Mode Lampu
+description: ''
+trigger:
+  - platform: state
+    entity_id: input_select.mode_lampu
+condition: []
+action:
+  - service: scene.turn_on
+    data_template:
+      entity_id: >-
+        {% if is_state("input_select.mode_lampu", "White") %}
+        scene.hktavod9pqp40ond  {% elif is_state("input_select.mode_lampu",
+        "Colour") %} scene.1r1lgqx0x4cub6wv  {% elif
+        is_state("input_select.mode_lampu", "Scene") %} scene.sublxsaiss5wbijt
+        {% elif is_state("input_select.mode_lampu", "Music") %}
+        scene.xavalyniads8u77x {% endif %}
+mode: single
