@@ -2,8 +2,6 @@
 
 ![alt text](img/02.png)
 
-[toc]
-
 ## Daftar Isi
  - [Pendahuluan](#pendahuluan)
  - [Skenario](#skenario)
