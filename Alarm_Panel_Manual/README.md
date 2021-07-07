@@ -4,17 +4,25 @@
 
 [toc]
 
-## 01. Pendahuluan
+## Daftar Isi
+ - [Pendahuluan](#pendahuluan)
+ - [Skenario](#skenario)
+ - [Persiapan](#persiapan)
+ - [Integrasi](#integrasi)
+ - [Konfigurasi](#konfigurasi)
+ - [Uji Coba](#uji-coba)
+
+## Pendahuluan
 
 Pada tutorial kali ini saya akan membahas tentang bagaimana cara membuat **Panel Alarm** secara manual, yang fungsinya untuk menjembatani sensor-sensor yang kita miliki agar dalam saling bersinergi dalam menjaga rumah kita baik di saat berada di rumah, malam hari maupun saat berada di luar rumah.
 
-## 02. Skenario
+## Skenario
 
 Disini saya ingin agar alarm berbunyi saat sensor gerak mendeteksi adanya pergerakan di depan pintu kamar baik saat saya berada dirumah, luar rumah maupun di malam hari. Bukan hanya itu saja, saya juga akan mendapatkan notifasi berupa pemberitahuan adanya gerakan di depan pintu kamar melalui smartphone yang saya gunakan.
 
 Sebelum alarm berbunyi, volume speaker akan di set agar lebih tinggi dari kondisi normal kemudian mengeluarkan suara pemberitahuan kepada penyusup, dan tidak lama kemudian speaker pun memutar file mp3 yang sudah disimpan di perangkat yang menjalankan **Home Assistant**.
 
-## 04. Persiapan
+## Persiapan
 
 Berikut daftar perangkat yang kita butuhkan untuk menjalankan skenario ini:
 
@@ -24,7 +32,7 @@ Berikut daftar perangkat yang kita butuhkan untuk menjalankan skenario ini:
 
 Siapkan juga file mp3 yang anda inginkan dan simpan di STB dengan bantuan addon **SAMBA** pada folder **/config/www/local/mp3**.
 
-## 05. Integrasi
+## Integrasi
 
 Tambahkan baris berikut pada file **configuration.yaml** menggunakan **File editor** :
 
@@ -50,7 +58,7 @@ alarm_code: 1234	# Silahkan ganti dengan kode yang anda inginkan
 ```
 Berikutnya ke menu **Configuration** > **Server Controls** pada kolom **Configuration validation** klik **CHECK CONFIGURATION** dan pastikan tidak ada galat yang muncul. Lanjutkan dengan klik **RESTART** pada kolom **Server management**, silahkan tunggu hingga prosesnya selesai.
 
-## 06. Konfigurasi
+## Konfigurasi
 
 Agar skenario yang kita inginkan dapat bekerja dengan baik, maka kita perlu membuat beberapa *skrip* di menu **Configuration** > **Scripts**, untuk membuat *skrip* ini silahkan klik tombol **ADD SCRIPT** yang berada pada kanan bawah halaman.
 
@@ -277,7 +285,7 @@ action:
       entity_id: script.1624058695419
 mode: single
 ```
-kemudian klik **SAVE ** yang berada pada kanan bawah halaman editornya.
+kemudian klik **SAVE** yang berada pada kanan bawah halaman editornya.
 
 Agar suara alarm tidak terus menerus berbunyi, maka kita perlu mambuat *automasi* supaya suara alarm berhenti saat kita memilih mode **disarm**.  isi dengan kode berikut:
 
@@ -297,6 +305,6 @@ action:
 mode: single
 ```
 
-## 07. Uji Coba
+## Uji Coba
 
 Silahkan menguji alarm yang sudah dibuat, apabila ada kendala Anda dapat berdiskusi dengan bergabung di group WA.
